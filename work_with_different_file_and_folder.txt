@@ -1,0 +1,71 @@
+PS C:\Users\Lenovo\OneDrive\Desktop\Git Practice\Muni_Repo\Muni_Repo>
+
+the above is my previous working folder, what ever changes i made those are belongs to only that folder
+which makes changes only in that repository.
+
+now i created his foldeer in local machine IDE lets see how to push this to GitHub repo
+
+1st -> change working space in terminal 
+    cd .. --> this moves working space to one step back, means not in current folder, 
+        it moves to the prevoius folder then it works with that same or we can change the folder what ever we nee
+
+2nd -> change directory to current folder
+    cd Muni_Demo_Repo --> this will change the working directory
+
+3rd -> convert this ordinary folder into a git folder
+    this folder and files in it has been created manually it's not been cloned from git
+    .git -> to consider a folder as a git folder it must has to have .git file or folder in it
+    otherwise it won't be considered as git folder or repository
+
+    to make sure about it 1st run git status, it won't show any file details inside the folder
+
+git init --> this commandd initializes the normal folder into a git folder convert's it as local repo
+        after running this can see a .git hidden folder in the same folder
+
+4th -> git add folder name or git add . -> now i have 2 files in my folder to add both i don't want to 
+    write git add fileName1 then git add fileName2.
+
+    git add . --> this will move all available file to the staging are from folder
+
+5th -> git commit -m "commit message" --> this move to local repo
+
+6th -> git push origin main --> here we can't use this directly cause this repository is created  locally
+        so in GitHub there no repo created yet to commit with  origin
+
+        with out creating a repo is GitHub we can't get origin link to push the consider
+
+        if we try it will throw error: failed to push some refs to 'origin'
+
+
+before doing all the below things create the new repository in Git
+
+git remote add origin repository_link  --> this command is used to add the new repository as origin in local machin
+
+git branch   --> this will show branch name master instead of main (it's not a branch)
+
+git push origin master  --> instead of git push origin main we can use master to push 
+
+or
+
+git branch -M main  --> renaming the name master as main and then use the old command
+
+git push origin main --> this works only after renaming
+
+
+
+After creating new repository below suggestions will been shown for quick setup
+
+    This is tto create new repository on Command line
+        echo "# GitHub_Practice" >> README.md
+        git init
+        git add README.md
+        git commit -m "first commit"
+        git branch -M main
+        git remote add origin https://github.com/Muniyappan-Singaravel/GitHub_Practice.git
+        git push -u origin main
+
+
+    This is to push an existing repository from command line
+        git remote add origin https://github.com/Muniyappan-Singaravel/GitHub_Practice.git
+        git branch -M main
+        git push -u origin main
