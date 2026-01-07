@@ -69,3 +69,22 @@ After creating new repository below suggestions will been shown for quick setup
         git remote add origin https://github.com/Muniyappan-Singaravel/GitHub_Practice.git
         git branch -M main
         git push -u origin main
+
+
+git branch -a --> this command will display all branches in the repository
+                if we have only main or master then it will display only main and master
+
+1st -> crete a branch in github, this will automatically copy all file from main to branch
+        now check in  terminal using (git branch -a) again this will show show only main
+
+2nd -> git pull --> use this to pull the branch to your local repository
+        then check with (git branch -a) to make surre git branch is pulled
+        also this will show into which branch we are working in currently
+
+        if wee want to work in a branch then we have to switch working spacee to branch
+
+
+3rd -> git checkout branchName --> this will switch working space to the mentioned branch
+                            to make sure whether it switched or not again use (git branch -a) command
+
+
