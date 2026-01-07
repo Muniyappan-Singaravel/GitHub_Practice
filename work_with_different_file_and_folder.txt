@@ -70,6 +70,15 @@ After creating new repository below suggestions will been shown for quick setup
         git branch -M main
         git push -u origin main
 
+        this will create another branch called main, but the old branch master will renaming
+        if we want to delete master branch and want only main means then we have to use delete commands
+
+
+    Delete  Commands:
+        git branch -d master --> command to delete master branch, but it gives warning if we have any unmerged commits
+        git branch -D master --> this deletes only the local repo, if repo is already pushed into origin means use below command
+        git push origin --delete master --> this deletes master repo from origin itself.
+
 
 git branch -a --> this command will display all branches in the repository
                 if we have only main or master then it will display only main and master
