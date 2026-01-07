@@ -97,3 +97,32 @@ git branch -a --> this command will display all branches in the repository
                             to make sure whether it switched or not again use (git branch -a) command
 
 
+
+
+git push origin branchName --> to push our code or changes to branch repo
+
+git checkout main --> again switches workspace to main branch
+
+git diff branchName --> this will show what difference is made branches, and also difference between main and branch files
+
+
+Consider we are creating file in branch and now we want to push it 
+    do the same procedure
+    git add . or file name
+    git commit -m "commit message"
+    git push origin branchName
+
+
+now you have pushed your changes to your branch, what if want to push all to the main only the changes 
+
+switch work space to main
+
+git checkout main --> switching workspace
+
+git merge branchName --> (this will merge everything in local repo) means now we are in main, 
+        along with this main we are merging the branch 
+        this will merge all the modifications done in a branch to main.
+
+
+git push origin main --> this will push all merged file to github repo
+
